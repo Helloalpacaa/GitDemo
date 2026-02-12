@@ -6,6 +6,7 @@ class TaskStore: ObservableObject {
         Task(title: "Create first commit"),
         Task(title: "Try branching"),
         Task(title: "Make a pull request"),
+        Task(title: "Merge a pull request"),
         
     ]
 
