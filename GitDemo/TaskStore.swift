@@ -7,6 +7,7 @@ class TaskStore: ObservableObject {
         Task(title: "Try branching"),
         Task(title: "Make a pull request"),
         Task(title: "Merge a pull request"),
+        Task(title: "Pull from the remote branch")
         
     ]
 
