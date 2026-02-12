@@ -1,0 +1,23 @@
+import Foundation
+
+class TaskStore: ObservableObject {
+    @Published var tasks: [Task] = [
+        Task(title: "Learn Git basics"),
+        Task(title: "Create first commit"),
+        Task(title: "Try branching"),
+    ]
+
+    func add(_ title: String) {
+        tasks.append(Task(title: title))
+    }
+
+    func toggle(_ task: Task) {
+        if let index = tasks.firstIndex(where: { $0.id == task.id }) {
+            tasks[index].isCompleted.toggle()
+        }
+    }
+
+    func delete(at offsets: IndexSet) {
+        tasks.remove(atOffsets: offsets)
+    }
+}
