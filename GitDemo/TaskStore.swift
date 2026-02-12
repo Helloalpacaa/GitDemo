@@ -5,6 +5,8 @@ class TaskStore: ObservableObject {
         Task(title: "Learn Git basics"),
         Task(title: "Create first commit"),
         Task(title: "Try branching"),
+        Task(title: "Make a pull request"),
+        
     ]
 
     func add(_ title: String) {
